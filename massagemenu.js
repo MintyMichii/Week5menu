@@ -1,3 +1,4 @@
+console.log ("test");
 class Spa{
     constructor(product, service) {
         this.product = product;
@@ -11,7 +12,7 @@ class Spa{
 //this is going to show all the sauces the user can put on their pizza 
 class Massage {
     constructor(name) {
-        this.product = product;
+        this.product = name;
         this.service = [];
     } 
         //This makes sure the user only puts in items the resturant provides
@@ -96,7 +97,7 @@ class Menu {
      } 
 //we're defining the methods here
      viewService(){
-        let =  prompt('Enter the index of the service you wish to view');
+        let product = prompt ('Enter the index of the service you wish to view');
         if (index > -1 && index < this.service.length) {
             this.selectedMassage = this.service[index];
             let description = 'Massage Service:' + this.selectedMassage.product + '\n';
